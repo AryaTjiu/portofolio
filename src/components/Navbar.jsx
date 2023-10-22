@@ -90,12 +90,12 @@ const Navbar = () => {
                 Work
             </li>
           </Link>
-          <Link onClick={handleClick} to='contact' smooth={true} duration={500}>
+          {/* <Link onClick={handleClick} to='contact' smooth={true} duration={500}>
             <li className='w-full py-6 flex justify-center hover:bg-[#202020]'>
               {' '}
                 Contact
             </li>
-          </Link>
+          </Link> */}
         </ul>
       </button>
 
