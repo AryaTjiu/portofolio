@@ -3,7 +3,6 @@ import { useState } from 'react';
 import { dataSkill } from '../data/data';
 
 const Skills = () => {
-
     const [skills, setSkills] = useState(null);
     useState(() => {
         setSkills(dataSkill);
@@ -25,7 +24,7 @@ const Skills = () => {
                                 {e.name}
                             </span>
                             <div className='w-full md:w-96 h-[5px] rounded-full bg-[#252525] overflow-hidden'>
-                                <div className={`bg-neutral-300 h-full`} style={{ width:`${e.percentage}%` }}></div>
+                                <div className={`bg-neutral-300 h-full`} style={{ width:`${e.percentage}%` }} data-aos="fade-right"></div>
                             </div>
                         </div>
                     </div>

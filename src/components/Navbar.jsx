@@ -19,7 +19,7 @@ const Navbar = () => {
   const handleClick = () => setNav(!nav);
 
   return (
-    <div className='fixed w-full h-[80px] flex justify-between items-center px-10 md:px-36 xl:px-56 bg-[#181818] text-gray-300'>
+    <div className='fixed w-full h-[80px] flex justify-between items-center px-10 md:px-36 xl:px-56 bg-[#181818] text-gray-300 z-40 overflow-hidden'>
       <div className='text-3xl font-bold'>
         My portfolio
       </div>
@@ -129,7 +129,7 @@ const Navbar = () => {
           <li className='w-[160px] h-[60px] flex justify-between items-center ml-[-100px] hover:ml-[-10px] duration-300 bg-[#333333]'>
             <a
               className='flex justify-between items-center w-full text-gray-300'
-              href='https://github.com/AryaTjiu?tab=repositories'
+              href='https://github.com/AryaTjiu'
             >
               Github <FaGithub size={30} />
             </a>

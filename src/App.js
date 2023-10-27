@@ -12,7 +12,7 @@ import Loader from "./components/loader";
 
 function App() {
   return (
-    <div className="bg-[#181818]">
+    <div className="bg-[#181818] w-full overflow-hidden">
       <Loader/>
       <Navbar />
       <Home />

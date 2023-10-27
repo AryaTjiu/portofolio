@@ -1,12 +1,10 @@
-import React from 'react';
+import React, { useState } from 'react';
 import { dataWork } from "../data/data.js";
-
 
 const Work = () => {
 
-    // projects file
-    const project = dataWork;
-    //setProject(data);
+  // projects file
+  const project = dataWork;
   
   return (
     <div name='work' className='px-10 md:px-36 w-full min-h-screen md:h-screen py-36 xl:py-0 text-gray-300 bg-[#181818]'>
@@ -21,7 +19,7 @@ const Work = () => {
         <div className="grid sm:grid-cols-2 md:grid-cols-3 gap-4">
           {/* Gird Item */}
           {project.map((item, index) => (
-            <div key={index} style={{ backgroundImage: `url(assets/img/${item.image})` }} className="shadow-lg shadow-[#040c16] group container rounded-md  flex justify-center text-center items-center mx-auto content-div bg-cover">
+            <div key={index} style={{ backgroundImage: `url(assets/img/${item.image})` }} className="shadow-lg shadow-[#040c16] group container rounded-md  flex justify-center text-center items-center mx-auto content-div bg-cover z-0" data-aos="fade-up" data-aos-delay={index * 50}>
               {/* Hover effect for images */}
               <div className="opacity-0 group-hover:opacity-100 duration-500">
                 <div className='flex flex-col'>  

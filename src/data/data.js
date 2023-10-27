@@ -38,14 +38,14 @@ export const dataWork=[
         github:"https://github.com/4clean/web",
         live:"https://4clean.github.io/web/",
     },
-    {
-        id:4,
-        name:"Tokosl 88",
-        exercise: false,
-        date: "12/8/23",
-        image:"tokosl88.jpg",
-        live:"https://www.tokosl88.com/",
-    },
+    // {
+    //     id:4,
+    //     name:"Tokosl 88",
+    //     exercise: false,
+    //     date: "12/8/23",
+    //     image:"tokosl88.jpg",
+    //     live:"https://www.tokosl88.com/",
+    // },
 ]
 
 export const dataSkill = [

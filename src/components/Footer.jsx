@@ -16,7 +16,7 @@ const Footer = () => {
                     Codewars
                 </a>
                 <div className="h-5 w-[2px] bg-white"></div>
-                <a href="https://github.com/AryaTjiu?tab=repositories">
+                <a href="https://github.com/AryaTjiu">
                     Github
                 </a>
                 <div className="h-5 w-[2px] bg-white"></div>

@@ -20,9 +20,9 @@ const Loader = () => {
     }, [])
 
     return ( 
-        <div className={`fixed w-full h-screen z-50 bg-[#181818] grid place-content-center ${loaderIsHidden} duration-300`}>
-            <div className="flex flex-col space-y-4">
-                <img src="assets/loader.svg" className="w-20"/>
+        <div className={`fixed w-full overflow-hidden h-screen z-50 bg-[#181818] grid place-content-center ${loaderIsHidden} duration-300`}>
+            <div className="flex flex-col items-center justify-center space-y-4">
+                <img src="assets/loader.svg" className="w-14 md:w-20"/>
                 <span className="text-white text-xl font-semibold">Loading...</span>
             </div>
         </div>
