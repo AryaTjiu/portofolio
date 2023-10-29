@@ -26,11 +26,11 @@ const Timelines = () => {
                     
                     {
                         data && data.map((e) => (
-                        <div className={`mb-10 p-4 ml-10 pt-0 flex flex-col w-[90%] xl:w-[40%] bg-[#191919] space-y-5 relative
+                        <div className={`mb-10 p-4 ml-10 pt-0 flex flex-col w-[90%] xl:w-[40%] bg-[#202020] space-y-5 relative
                         ${((e.id % 2 == 0)? "xl:ml-auto" 
                         :
                         "xl:mr-auto")}`} data-aos="fade-up">
-                            <div className={`w-0 h-0 border-t-[10px] border-t-transparent border-b-[10px] border-b-transparent absolute top-10  border-r-[#191919] border-l-[#191919]  ${((e.id % 2 == 0)? "-left-[15px] border-r-[15px]" 
+                            <div className={`w-0 h-0 border-t-[10px] border-t-transparent border-b-[10px] border-b-transparent absolute top-10  border-r-[#202020] border-l-[#202020]  ${((e.id % 2 == 0)? "-left-[15px] border-r-[15px]" 
                             : 
                             "xl:-right-[15px] xl:border-l-[15px] xl:left-full  xl:border-r-0 -left-[15px] border-r-[15px]")}`}></div>
 
