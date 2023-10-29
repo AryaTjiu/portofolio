@@ -12,7 +12,7 @@ const Timelines = () => {
         <div name='timelines' className='px-10 md:px-36 w-full min-h-screen bg-[#151515] text-gray-300 py-20 md:py-28 xl:py-40'>
             {/* Container */}
             <div className='max-w-[1000px] mx-auto py-4 flex flex-col justify-center w-full h-full space-y-16 md:space-y-28'>
-                <div className="flex flex-col text-left xl:text-center" data-aos="fade-up">
+                <div className="flex flex-col text-left xl:text-center space-x-2" data-aos="fade-up">
                     <span className="text-purple-600 mb-2">
                         Timelines
                     </span>

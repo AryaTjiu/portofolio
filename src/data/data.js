@@ -110,7 +110,7 @@ export const dataTimelines = [
     {
         id:6,
         title:"Learn Node JS",
-        date: "March 24, 2023, 2022",
+        date: "March 24, 2022",
         content: "I found out about this from my friend, so I started learning, of course I learned node js for web programming, at this point I started to get serious about programming, I studied it a little just to learn to use npm and chose to deepen html, css and javascript"
     },
     {
