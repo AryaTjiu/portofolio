@@ -17,7 +17,7 @@ const About = () => {
               <p>Hi. I'm Arya Tjiutanto, nice to meet you. Please take a look around.</p>
             </div>
             <div data-aos="fade-left">
-              <p>I was born on October 9, 2007 and have had a deep interest in technology since childhood. At the age of 13, I entered the world of programming and have been familiar with this for 3 years. During the trip, I learned various programming languages ​​such as JavaScript, Python, Java, and Dart. But in the end, I decided to focus on JavaScript and develop my skills in the field of website development, and in that time I have become a website developer with almost 2 years of experience, with the main focus on frontend development. Proficient in HTML, CSS, Tailwind CSS, JavaScript, and ReactJS. Committed to creating engaging and responsive user experiences.</p>  
+              <p>I was born on October 9, 2007 and have had a deep interest in technology since childhood. At the age of 13, I entered the world of programming and have been familiar with this for almost 3 years. During the trip, I learned various programming languages ​​such as JavaScript, Python,and Java. But in the end, I decided to focus on JavaScript and develop my skills in the field of website development, and in that time I have become a website developer with almost 2 years of experience, with the main focus on frontend development. Proficient in HTML, CSS, Tailwind CSS, JavaScript, and ReactJS. Committed to creating engaging and responsive user experiences.</p>  
             </div>
           </div>
       </div>

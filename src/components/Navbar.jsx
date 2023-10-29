@@ -19,7 +19,7 @@ const Navbar = () => {
   const handleClick = () => setNav(!nav);
 
   return (
-    <div className='fixed w-full h-[80px] flex justify-between items-center px-10 md:px-36 xl:px-56 bg-[#181818] text-gray-300 z-40 overflow-hidden'>
+    <div className='fixed w-full h-[80px] flex justify-between items-center px-10 md:px-20 xl:px-40 2xl:px-56 bg-[#181818] text-gray-300 z-40 overflow-hidden'>
       <div className='text-3xl font-bold'>
         My portfolio
       </div>

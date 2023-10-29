@@ -9,7 +9,7 @@ const Skills = () => {
     }, [])
 
     return (
-    <div name='skills' className='px-10 md:px-36 w-full h-screen bg-[#181818] text-gray-300'>
+    <div name='skills' className='px-10 md:px-40 xl:px-56 w-full min-h-screen py-10 md:py-28 xl:py-40 bg-[#181818] text-gray-300 flex flex-col justify-center'>
         {/* Container */}
         <div className='max-w-[1000px] mx-auto py-4 flex flex-col justify-center w-full h-full'>
             <div>
