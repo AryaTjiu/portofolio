@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useRef, useState } from 'react';
 import {
   FaBars,
   FaTimes,
@@ -18,8 +18,25 @@ const Navbar = () => {
   const [nav, setNav] = useState(false);
   const handleClick = () => setNav(!nav);
 
+  const navbarRef = useRef(null);
+  useState(() => {
+    const handleScroll = () => {
+      if(window.scrollY > window.screen.height - 100) {
+        navbarRef.current.style.background = "#131313";
+      } else {
+        navbarRef.current.style.background = "#181818";
+      }
+    }
+
+    window.addEventListener("scroll", handleScroll);
+
+    return () => {
+      window.removeEventListener("scroll", handleScroll);
+    }
+  }, [])
+
   return (
-    <div className='fixed w-full h-[80px] flex justify-between items-center px-10 md:px-20 xl:px-40 2xl:px-56 bg-[#181818] text-gray-300 z-40 overflow-hidden'>
+    <div className='fixed w-full h-[80px] flex justify-between items-center px-10 md:px-20 xl:px-40 2xl:px-56 text-gray-300 z-40 overflow-hidden duration-1000' ref={navbarRef}>
       <div className='text-3xl font-bold'>
         My portfolio
       </div>
@@ -46,11 +63,11 @@ const Navbar = () => {
             Work
           </Link>
         </li>
-        {/* <li>
-          <Link to='contact' smooth={true} duration={500}>
+        <li>
+          <Link className='hover:text-purple-600 duration-200' to='contact' smooth={true} duration={500}>
             Contact
           </Link>
-        </li> */}
+        </li>
       </ul>
 
       {/* Hamburger */}
@@ -90,12 +107,12 @@ const Navbar = () => {
                 Work
             </li>
           </Link>
-          {/* <Link onClick={handleClick} to='contact' smooth={true} duration={500}>
+          <Link onClick={handleClick} to='contact' smooth={true} duration={500}>
             <li className='w-full py-6 flex justify-center hover:bg-[#202020]'>
               {' '}
                 Contact
             </li>
-          </Link> */}
+          </Link>
         </ul>
       </button>
 

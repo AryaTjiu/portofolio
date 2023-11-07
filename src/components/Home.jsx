@@ -1,12 +1,12 @@
 import Aos from 'aos';
 import "aos/dist/aos.css";
-import React from 'react';
+import React, { useEffect } from 'react';
 import { useState } from 'react';
 import { HiArrowNarrowRight } from 'react-icons/hi';
 import { Link } from 'react-scroll';
 
 const Home = () => {
-  useState(() => {
+  useEffect(() => {
     Aos.init({duration:1200})
   }, [])
 

@@ -1,18 +1,72 @@
-import React from 'react'
+import { ValidationError, useForm } from '@formspree/react'
+import { faCheck } from '@fortawesome/free-solid-svg-icons'
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import React, { useEffect, useRef, useState } from 'react'
 
-const Contact = () => {
+const Contact = ({submitted}) => {
+  const succesAlertRef = useRef(null);
+  const successAlertLoadRef = useRef(null)
+  
+  useEffect(() => {
+    if (submitted) {
+      succesAlertRef.current.style.opacity = "100%";
+      succesAlertRef.current.style.display = "grid";
+      setTimeout(() => {
+        successAlertLoadRef.current.style.width = 0;  
+        setTimeout(() => {
+          succesAlertRef.current.style.opacity = 0;
+          setTimeout(() => {
+            succesAlertRef.current.style.display = "none";
+          }, 500);
+        }, 6500)
+      }, 100)
+    }
+  }, [succesAlertRef, successAlertLoadRef])
+
+  const [state, handleSubmit] = useForm("mnqkrnda")
+  if (state.succeeded) {
+    return <Contact submitted={true} />
+  }
+
+
   return (
-    <div name='contact' className='w-full h-screen bg-[#0a192f] flex justify-center items-center p-4'>
-        <form method='POST' action="https://getform.io/f/a699a1b2-f225-434e-b317-1fbbde8e006c" className='flex flex-col max-w-[600px] w-full'>
-            <div className='pb-8'>
-                <p className='text-4xl font-bold inline border-b-4 border-pink-600 text-gray-300'>Contact</p>
-                <p className='text-gray-300 py-4'>// Submit the form below or shoot me an email - vutukuri.kumar192st.niituniversity.in</p>
+    <div name='contact' className='w-full min-h-screen py-40 px-10 bg-[#101010] flex justify-center items-center p-4 relative'>
+      {/* succes message */}
+      <div className='w-full h-full hidden opacity-0 place-content-center top-0 left-0 absolute z-10 bg-[#101010] text-white duration-500' ref={succesAlertRef}>
+        <div className='flex flex-col items-center'>
+          <div className='w-fit h-fit px-8 py-7 rounded-full bg-[#181818] text-4xl mb-10'>
+            <FontAwesomeIcon icon={faCheck}></FontAwesomeIcon>
+          </div>
+          <span className='text-3xl font-bold mb-2'>Thank You</span>
+          <span className='mb-10'>
+            The form has been successfully submitted
+          </span>
+          <div className="flex flex-col items-center space-y-2">
+            <div className='w-80 h-1 rounded-full bg-[#181818]'>
+              <div className='h-full w-full bg-purple-600 duration-[6500ms]' ref={successAlertLoadRef}></div>
             </div>
-            <input className='bg-[#ccd6f6] p-2' type="text" placeholder='Name' name='name' />
-            <input className='my-4 p-2 bg-[#ccd6f6]' type="email" placeholder='Email' name='email' />
-            <textarea className='bg-[#ccd6f6] p-2' name="message" rows="10" placeholder='Message'></textarea>
-            <button className='text-white border-2 hover:bg-pink-600 hover:border-pink-600 px-4 py-3 my-8 mx-auto flex items-center'>Let's Collaborate</button>
-        </form>
+            <span className='text-neutral-200 text-sm'>Close automatically</span>
+          </div>
+        </div>
+      </div>
+      {/* form */}
+      <form method='POST' action="https://getform.io/f/a699a1b2-f225-434e-b317-1fbbde8e006c" className='flex flex-col max-w-[600px] w-full text-neutral-200' onSubmit={handleSubmit}>
+        <div className='pb-8 text-center'>
+          <p className='text-4xl font-bold inline border-b-4 border-purple-600 text-gray-300'>Contact</p>
+          <p className='text-gray-300 py-4'>// For inquiries or just to say hello, the form below awaits you, or feel free to email me at aryatjiu.dev@gmail.com.</p>
+        </div>
+        {/* name */}
+        <input className='bg-[#202020] focus:outline-none p-2' type="text" placeholder='Name' name='name' id='name' />
+        <ValidationError field='name' prefix='Name' errors={state.errors}></ValidationError>
+        {/* email */}
+        <input className='my-4 p-2 bg-[#202020] focus:outline-none' type="email" placeholder='Email' name='email' id='email' />
+        <ValidationError field='email' prefix='Email' errors={state.errors}></ValidationError>
+        {/* message */}
+        <textarea className='bg-[#202020] focus:outline-none p-2' name="message" id='message' type="text" rows="10" placeholder='Message'></textarea>
+        <ValidationError field='message' prefix='Message' errors={state.errors}></ValidationError>
+        {/* submit button */}
+        <button className='text-white border-2 hover:bg-pink-600 hover:border-pink-600 px-4 py-3 my-8 mx-auto flex items-center duration-200 w-full justify-center' type='submit' disabled={state.submitting}>Submit</button>
+      </form>
     </div>
   )
 }

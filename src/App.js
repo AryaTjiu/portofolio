@@ -22,6 +22,7 @@ function App() {
       <Skills />
       <Timelines/>
       <Codewars />
+      <Contact/>
       <Work />
       <Footer/>
       {/* <Contact /> */}
