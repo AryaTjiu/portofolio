@@ -131,4 +131,10 @@ export const dataTimelines = [
         date: "June 27, 2023",
         content: "I started learning React JS just because I was curious, but after I used it it was very good and very different from before, I felt interested so I continued my journey using React JS"
     },
+    {
+        id:10,
+        title:"Learn Next Js",
+        date: "November 9, 2023",
+        content: "I started to feel uncomfortable with ReactJS, of course it\'s about installing packages, even just for routing, not only that, I started thinking about clientside rendering which affects my website SEO. and of course after I read many articles, searched online trends and forums, I found the solution, a React JS framework called Next JS might be able to solve my problem. after I looked for information about it, it turned out it was really good and there was no harm in me learning it...."
+    },
 ]
