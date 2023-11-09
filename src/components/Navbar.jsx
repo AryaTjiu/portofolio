@@ -86,31 +86,37 @@ const Navbar = () => {
           </div>
           <Link onClick={handleClick} to='home' smooth={true} duration={500}>
             <li className='w-full py-6 flex justify-center hover:bg-[#202020]'>
-                Home
+                <button className='w-full h-full'>
+                  Home
+                </button>
             </li>
           </Link>
           <Link onClick={handleClick} to='about' smooth={true} duration={500}>
             <li className='w-full py-6 flex justify-center hover:bg-[#202020]'>
-              {' '}
+              <button className='w-full h-full'>
                 About
+              </button>
             </li>
           </Link>
           <Link onClick={handleClick} to='skills' smooth={true} duration={500}>
             <li className='w-full py-6 flex justify-center hover:bg-[#202020]'>
-              {' '}
+              <button className='w-full h-full'>
                 Skills
+              </button>
             </li>
           </Link>
           <Link onClick={handleClick} to='work' smooth={true} duration={500}>
             <li className='w-full py-6 flex justify-center hover:bg-[#202020]'>
-              {' '}
+              <button className='w-full h-full'>
                 Work
+              </button>
             </li>
           </Link>
           <Link onClick={handleClick} to='contact' smooth={true} duration={500}>
             <li className='w-full py-6 flex justify-center hover:bg-[#202020]'>
-              {' '}
+              <button className='w-full h-full'>
                 Contact
+              </button>
             </li>
           </Link>
         </ul>

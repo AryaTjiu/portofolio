@@ -6,6 +6,15 @@ import React, { useEffect, useRef, useState } from 'react'
 const Contact = ({submitted}) => {
   const succesAlertRef = useRef(null);
   const successAlertLoadRef = useRef(null)
+  const loadingSectionRef = useRef(null);
+
+  // handle click button form 
+  const onClickButton = () => {
+    loadingSectionRef.current.classList.replace("bg-opacity-0", "bg-opacity-100")
+    setTimeout(() => {
+      loadingSectionRef.current.style.display = "grid"
+    }, 300)
+  }
   
   useEffect(() => {
     if (submitted) {
@@ -18,8 +27,13 @@ const Contact = ({submitted}) => {
           setTimeout(() => {
             succesAlertRef.current.style.display = "none";
           }, 500);
-        }, 6500)
+        }, 4300)
       }, 100)
+
+      loadingSectionRef.current.classList.add("bg-opacity-0")
+      setTimeout(() => {
+        loadingSectionRef.current.style.display = "hidden"
+      }, 300)
     }
   }, [succesAlertRef, successAlertLoadRef])
 
@@ -28,9 +42,15 @@ const Contact = ({submitted}) => {
     return <Contact submitted={true} />
   }
 
-
   return (
     <div name='contact' className='w-full min-h-screen py-40 px-10 bg-[#101010] flex justify-center items-center p-4 relative'>
+      {/* loading */}
+      <div className='w-full h-full absolute bottom-0 left-0 hidden bg-opacity-0 place-content-center bg-[#151515] z-20 duration-300' ref={loadingSectionRef}>
+        <div className='flex flex-col items-center space-y-5'>
+          <img className='w-20' src="/assets/loader.svg"></img>
+          <span className='text-white text-xl font-bold'>Sending...</span>
+        </div>
+      </div>
       {/* succes message */}
       <div className='w-full h-full hidden opacity-0 place-content-center top-0 left-0 absolute z-10 bg-[#101010] text-white duration-500' ref={succesAlertRef}>
         <div className='flex flex-col items-center'>
@@ -43,7 +63,7 @@ const Contact = ({submitted}) => {
           </span>
           <div className="flex flex-col items-center space-y-2">
             <div className='w-80 h-1 rounded-full bg-[#181818]'>
-              <div className='h-full w-full bg-purple-600 duration-[6500ms]' ref={successAlertLoadRef}></div>
+              <div className='h-full w-full bg-purple-600 duration-[4300ms]' ref={successAlertLoadRef}></div>
             </div>
             <span className='text-neutral-200 text-sm'>Close automatically</span>
           </div>
@@ -65,7 +85,7 @@ const Contact = ({submitted}) => {
         <textarea className='bg-[#202020] focus:outline-none p-2' name="message" id='message' type="text" rows="10" placeholder='Message'></textarea>
         <ValidationError field='message' prefix='Message' errors={state.errors}></ValidationError>
         {/* submit button */}
-        <button className='text-white border-2 hover:bg-pink-600 hover:border-pink-600 px-4 py-3 my-8 mx-auto flex items-center duration-200 w-full justify-center' type='submit' disabled={state.submitting}>Submit</button>
+        <button className='text-white border-2 hover:bg-pink-600 hover:border-pink-600 px-4 py-3 my-8 mx-auto flex items-center duration-200 w-full justify-center' type='submit' disabled={state.submitting} onClick={onClickButton}>Submit</button>
       </form>
     </div>
   )
