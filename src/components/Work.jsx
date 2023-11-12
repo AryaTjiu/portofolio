@@ -21,7 +21,7 @@ const Work = () => {
           {project.map((item, index) => (
             <div className='flex flex-col space-y-7' id={item.id}>
               <img src={`/assets/img/${item.image}`} className='w-full h-52 md:h-64'/>
-              <div className='flex flex-col space-y-4'>
+              <div className='flex flex-col space-y-6'>
                 <div className='flex justify-between'>
                   <div className='grid'>  
                     <span className='text-xl font-bold'>{item.name}</span>
@@ -43,13 +43,13 @@ const Work = () => {
                     ))}
                   </div>
                 </div>
-                <div className="flex space-x-4">
+                <div className="flex flex-col space-y-2">
                   {/* eslint-disable-next-line */}
                   {
                     item.github &&
                     <a href={item.github} target="_blank">
                       <button
-                        className="text-center px-10 py-3 bg-white text-gray-700 border-2 border-white hover:bg-transparent hover:text-white duration-200">
+                        className="text-center px-10 py-3 bg-white text-gray-700 border-2 border-white hover:bg-transparent hover:text-white duration-200 w-full">
                         Code
                       </button>
                     </a>
@@ -57,7 +57,7 @@ const Work = () => {
                   {/* eslint-disable-next-line */}
                   <a href={item.live} target="_blank">
                     <button
-                      className="text-center px-10 py-3 bg-transparent text-white border-2 border-white hover:bg-white hover:text-black duration-200">
+                      className="text-center px-10 py-3 bg-transparent text-white border-2 border-white hover:bg-pink-600 hover:border-pink-600 hover:text-white duration-200 w-full">
                       Live
                     </button>
                   </a>

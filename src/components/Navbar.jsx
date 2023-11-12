@@ -1,17 +1,10 @@
 import React, { useRef, useState } from 'react';
 import {
-  FaBars,
-  FaTimes,
   FaGithub,
-  FaLinkedin,
-  FaFacebook,
-  FaLinkedinIn,
   FaYoutube,
   FaInstagram,
 } from 'react-icons/fa';
 import { HiOutlineMail } from 'react-icons/hi';
-import { BsFillPersonLinesFill } from 'react-icons/bs';
-import Logo from '../assets/logo.png';
 import { Link } from 'react-scroll';
 
 const Navbar = () => {
@@ -21,7 +14,7 @@ const Navbar = () => {
   const navbarRef = useRef(null);
   useState(() => {
     const handleScroll = () => {
-      if(window.scrollY > window.screen.height - 100) {
+      if(window.scrollY > window.screen.height - 100 && navbarRef) {
         navbarRef.current.style.background = "#131313";
       } else {
         navbarRef.current.style.background = "#181818";
