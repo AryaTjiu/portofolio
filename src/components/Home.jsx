@@ -11,11 +11,11 @@ const Home = () => {
   }, [])
 
   return (
-    <div name='home' className='w-full h-screen min-h-screen z-0 py-36 xl:py-0 overflow-hidden'>
+    <div name='home' className='z-0 py-20 xl:py-0 overflow-hidden'>
       {/* glow */}
       {/* <div className='absolute bg-gradient-to-br from-purple-600 to-yellow-500  blur-[12vh] w-80 h-80 bottom-0 left-0 -z-10'></div> */}
       {/* Container */}
-      <div className='max-w-[1000px] mx-auto px-10 md:px-36 flex flex-col justify-center h-full text-neutral-200'>
+      <div className='max-w-[1000px] min-h-screen mx-auto px-10 md:px-36 flex flex-col justify-center text-neutral-200'>
         <p className='text-purple-600' data-aos="fade-down">Hi, my name is</p>
         <h1 className='text-4xl sm:text-7xl font-bold' data-aos="fade-down" data-aos-delay="50">
           ARYA TJIUTANTO

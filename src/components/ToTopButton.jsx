@@ -14,7 +14,7 @@ const ToTopButton = () => {
         }
 
         const handleVisibility = () => {
-            if(window.scrollY > (window.screen.height * 50 / 100) ) {
+            if(window.scrollY > (window.screen.height * 20 / 100) ) {
                 buttonRef.current.style.opacity = 100 + "%";
             } else {
                 buttonRef.current.style.opacity = 0
