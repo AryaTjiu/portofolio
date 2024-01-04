@@ -37,8 +37,8 @@ const Work = () => {
                   </span>
                   <div className='flex space-x-2'>
                     {item.tech.map(data => (
-                        <span style={{ color : data[1] }}>
-                          {data[0]}
+                        <span>
+                          {data}
                         </span>
                     ))}
                   </div>
@@ -49,8 +49,8 @@ const Work = () => {
                     item.github &&
                     <a href={item.github} target="_blank">
                       <button
-                        className="text-center px-10 py-3 bg-white text-gray-700 border-2 border-white hover:bg-transparent hover:text-white duration-200 w-full">
-                        Code
+                        className="text-center space-x-2 px-10 py-3 bg-white text-gray-700 border-2 border-white hover:bg-transparent hover:text-white duration-200 w-full">
+                          <span>Code</span>
                       </button>
                     </a>
                   }

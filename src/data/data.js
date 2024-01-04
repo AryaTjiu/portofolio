@@ -11,7 +11,7 @@ export const dataWork=[
         image:"lofipharse.jpg",
         github: null,
         live:"https://lofi-pharse.vercel.app/",
-        tech: [["react js", "#2cc0e6"]]
+        tech: ["react js","TailwindCSS"]
     },
     {
         id:2,
@@ -22,7 +22,7 @@ export const dataWork=[
         image:"tourease.jpg",
         github: null,
         live:"https://tour-ease-5j6rmf45f-syegi.vercel.app/",
-        tech: [["react js", "#2cc0e6"]]
+        tech: ["react js", "TailwindCSS"]
     },
     {
         id:3,
@@ -33,7 +33,7 @@ export const dataWork=[
         image:"cinehunt.jpg",
         github:null,
         live:"https://cinehunt.vercel.app/",
-        tech: [["react js", "#2cc0e6"]]
+        tech: ["react js","TailwindCSS"]
     },
     {
         id:4,
@@ -44,18 +44,40 @@ export const dataWork=[
         image:"4clean.jpg",
         github:"https://github.com/4clean/web",
         live:"https://4clean.github.io/web/",
-        tech: [["HTML", "#d16908"], ["CSS", "#00c3d9"], ["Javascript", "#d6b709"]]
+        tech: ["HTML","CSS","Javascript"]
     },
-    // {
-    //     id:4,
-    //     name:"Tokosl 88",
-    //     exercise: false,
-    //     projectNote: "",
-    //     date: "12/8/23",
-    //     image:"tokosl88.jpg",
-    //     live:"https://www.tokosl88.com/",
-    //     tech: [["react js", "#2cc0e6"]]
-    // },
+    {
+        id:4,
+        name:"Tokosl 88",
+        exercise: false,
+        projectNote: "",
+        date: "12/8/23",
+        image:"tokosl88.jpg",
+        live:"https://www.tokosl88.com/",
+        tech: ["Laravel", "TailwindCSS", "HTML"]
+    },
+    {
+        id: 5,
+        name:"Link tree",
+        exercise: false,
+        projectNote: "",
+        date: "12/12/23",
+        github : "https://github.com/AryaTjiu",
+        image:"link-tree.jpg",
+        live:"https://aryatjiutanto.vercel.app/",
+        tech: ["Next js","TailwindCSS"]
+    },
+    {
+        id: 6,
+        name:"cornqr",
+        exercise: true,
+        projectNote: "",
+        date: "12/12/23",
+        github : "https://github.com/AryaTjiu/cornqr",
+        image:"cornqr.jpg",
+        live:"https://cornqr.vercel.app/",
+        tech: ["Next js","TailwindCSS"]
+    },
 ]
 
 export const dataSkill = [
