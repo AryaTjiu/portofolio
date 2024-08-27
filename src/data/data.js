@@ -87,6 +87,15 @@ export const dataWork=[
         live:"https://tupcure.vercel.app/",
         tech: ["Next js","TailwindCSS"]
     },
+    {
+        id: 8,
+        name:"Eskul Coding SMA Buddhi",
+        date: "12/07/24",
+        github : null,
+        image:"smadhicoding.jpg",
+        live:"https://smadhicoding.netlify.app/",
+        tech: ["Next js","TailwindCSS"]
+    },
 ]
 
 export const dataSkill = [

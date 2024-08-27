@@ -39,9 +39,9 @@ const Work = () => {
                     </div>
                   </div>
                 </div>
-                <div className='opacity-0 group-hover:opacity-100 absolute p-20 bg-sky-blue-1 blur-[30rem] top-0 duration-150'></div>
+                {/* <div className='opacity-0 group-hover:opacity-100 absolute p-20 bg-sky-blue-1 blur-[30rem] top-0 duration-150'></div>
                 <div className='opacity-0 group-hover:opacity-100 absolute p-40 bg-purple-1 blur-[20rem] bottom-0 duration-150'></div>
-                <div className='opacity-0 group-hover:opacity-100 absolute p-20 bg-orange-1 blur-[20rem] bottom-0 left-0 duration-150'></div>
+                <div className='opacity-0 group-hover:opacity-100 absolute p-20 bg-orange-1 blur-[20rem] bottom-0 left-0 duration-150'></div> */}
                 <img src={`/assets/img/${item.image}`} className='w-full h-52 md:h-64'/>
               </a>
               {/* <div className='flex flex-col space-y-6'>
