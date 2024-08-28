@@ -10,7 +10,7 @@ const About = () => {
     }, [])
 
   return (
-    <section name='about' className='px-10 md:px-36 2xl:px-96 w-full min-h-[120vh] bg-white text-slate-800 py-20 xl:py-40 2xl:py-80 relative z-10'>
+    <section name='about' className='px-10 md:px-36 2xl:px-96 w-full min-h-[120vh] bg-white text-slate-800 py-20 xl:py-40 2xl:py-80 relative z-20'>
       <div className='flex flex-col justify-center w-full h-full space-y-10'>
         <h6 className='w-fit text-4xl font-bold text-transparent bg-clip-text bg-gradient-to-r from-red-1 to-pink-1'>
           About
@@ -29,10 +29,10 @@ const About = () => {
             <span className='font-semibold'>
               // The technology I use, and my expertise
             </span>
-            <div className='grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 xl:grid-cols-5 gap-2 lg:gap-5'>
+            <div className='grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 xl:grid-cols-5 gap-2 lg:gap-5 relative'>
               {
                 skills && skills.map((e) => (
-                    <article className='w-full bg-pink-0.4 rounded-xl flex flex-col flex-wrap items-center space-y-3 py-10'>
+                    <article className='w-full bg-pink-0.4 rounded-xl flex flex-col flex-wrap items-center space-y-3 py-10 relative'>
                         <div>
                           <img src={e.img} className='w-10 h-10'></img>
                         </div>

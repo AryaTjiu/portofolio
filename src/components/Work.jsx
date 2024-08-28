@@ -38,49 +38,9 @@ const Work = () => {
                       </span>
                     </div>
                   </div>
-                </div>
-                {/* <div className='opacity-0 group-hover:opacity-100 absolute p-20 bg-sky-blue-1 blur-[30rem] top-0 duration-150'></div>
-                <div className='opacity-0 group-hover:opacity-100 absolute p-40 bg-purple-1 blur-[20rem] bottom-0 duration-150'></div>
-                <div className='opacity-0 group-hover:opacity-100 absolute p-20 bg-orange-1 blur-[20rem] bottom-0 left-0 duration-150'></div> */}
+                </div>                
                 <img src={`/assets/img/${item.image}`} className='w-full h-52 md:h-64'/>
               </a>
-              {/* <div className='flex flex-col space-y-6'>
-                <div className='flex justify-between'>
-                  <div className='grid'>  
-                    <span className='text-xl font-bold'>{item.name}</span>
-                  </div>
-                  <span>{item.date}</span>
-                </div>
-                <div className='flex items-center space-x-4'>
-                  <span>
-                    Tech: 
-                  </span>
-                  <div className='flex space-x-2'>
-                    {item.tech.map(data => (
-                        <span>
-                          {data}
-                        </span>
-                    ))}
-                  </div>
-                </div>
-                <div className="flex flex-col space-y-2">
-                  {
-                    item.github &&
-                    <a href={item.github} target="_blank">
-                      <button
-                        className="text-center space-x-2 px-10 py-3 bg-white text-gray-700 border-2 border-white hover:bg-transparent hover:text-white duration-200 w-full">
-                          <span>Code</span>
-                      </button>
-                    </a>
-                  }
-                  <a href={item.live} target="_blank">
-                    <button
-                      className="text-center px-10 py-3 bg-transparent text-white border-2 border-white hover:bg-pink-600 hover:border-pink-600 hover:text-white duration-200 w-full">
-                      Live
-                    </button>
-                  </a>
-                </div>
-              </div> */}
             </div>
           ))}
         </div>

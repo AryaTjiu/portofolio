@@ -2,28 +2,28 @@ import WorkIm from '../assets/projects/workImg.jpeg'
 import RealEst from '../assets/projects/realestate.jpg'
 
 export const dataWork=[
-    {
-        id:1,
-        name:"Lofipharse",
-        exercise: true,
-        projectNote: "",
-        date: "3/9/23",
-        image:"lofipharse.jpg",
-        github: null,
-        live:"https://lofi-pharse.vercel.app/",
-        tech: ["react js","TailwindCSS"]
-    },
-    {
-        id:2,
-        name:"TourEase",
-        exercise: true,
-        projectNote: "",
-        date: "3/10/23",
-        image:"tourease.jpg",
-        github: null,
-        live:"https://tour-ease-5j6rmf45f-syegi.vercel.app/",
-        tech: ["react js", "TailwindCSS"]
-    },
+    // {
+    //     id:1,
+    //     name:"Lofipharse",
+    //     exercise: true,
+    //     projectNote: "",
+    //     date: "3/9/23",
+    //     image:"lofipharse.jpg",
+    //     github: null,
+    //     live:"https://lofi-pharse.vercel.app/",
+    //     tech: ["react js","TailwindCSS"]
+    // },
+    // {
+    //     id:2,
+    //     name:"TourEase",
+    //     exercise: true,
+    //     projectNote: "",
+    //     date: "3/10/23",
+    //     image:"tourease.jpg",
+    //     github: null,
+    //     live:"https://tour-ease-5j6rmf45f-syegi.vercel.app/",
+    //     tech: ["react js", "TailwindCSS"]
+    // },
     {
         id:3,
         name:"CineHunt",
@@ -35,17 +35,17 @@ export const dataWork=[
         live:"https://cinehunt.vercel.app/",
         tech: ["react js","TailwindCSS"]
     },
-    {
-        id:4,
-        name:"4clean",
-        exercise: false,
-        projectNote: "Practical assignments",
-        date: "8/9/22",
-        image:"4clean.jpg",
-        github:"https://github.com/4clean/web",
-        live:"https://4clean.github.io/web/",
-        tech: ["HTML","CSS","Javascript"]
-    },
+    // {
+    //     id:4,
+    //     name:"4clean",
+    //     exercise: false,
+    //     projectNote: "Practical assignments",
+    //     date: "8/9/22",
+    //     image:"4clean.jpg",
+    //     github:"https://github.com/4clean/web",
+    //     live:"https://4clean.github.io/web/",
+    //     tech: ["HTML","CSS","Javascript"]
+    // },
     {
         id:4,
         name:"Tokosl 88",
@@ -64,7 +64,7 @@ export const dataWork=[
         date: "12/12/23",
         github : "https://github.com/AryaTjiu",
         image:"link-tree.jpg",
-        live:"https://aryatjiutanto.vercel.app/",
+        live:"https://aryatjiutanto-links.vercel.app/",
         tech: ["Next js","TailwindCSS"]
     },
     {
